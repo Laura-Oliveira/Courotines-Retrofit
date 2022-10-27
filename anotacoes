@@ -1,0 +1,48 @@
+retrofit faz requisições rest para o back end e retorna no dado
+
+
+gson x mochi
+serializador transforma o json nas classes e objetos que serão utilizados dentro do projeto
+
+transforma dados do json em dados utilizáveis dentro do projeto
+
+retrofit faz as requisições
+gson transforma dados json em dados utilizáveis
+
+
+
+data class vem com método implementados para fazer comparações entre classes
+vem com métodos de comparação implementados por default
+
+classes que são para representar dados (resposta do back end) sempre utilizar como data class 
+
+vantagens gson retrofit
+
+@SerializedName("title") criar mapeamento chave valor entre nome da variavel do sistema para nome que vai retornar com valor do backend na requisição
+
+Uma boa prática é sempre colocar o @SerializedName em todas as variáveis, caso o backend faça alterações fica mais fácil de mapear
+
+object é uma classe que você não precisa criar uma instância (chama o nome direto da classe). Vem com a instância do objeto criada por default dentro dela mesma
+
+retrofit é voltado para interfaces
+
+Passos para Configurar Retrofit na aplicação
+criar a classes dos dados (WeatheResponse)
+criar a classe do componente do retrofit (RetrofitComponent)
+criar a classe de servico (classe que possui as rotas/requisições para buscar dados do backend) get, post, put requests (WeatherService)
+
+courotines facilita a usabilidade da aplicação, roda as requisições em background enquanto o usário segue usando a aplicação. Não trava o usuário enquanto os dados não chegam. Não trava recursos
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
